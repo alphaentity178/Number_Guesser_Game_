@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="heading">
+        <h1>Number Guessing</h1>
+    </div>
+    <div id="section1">
+        <div id="generate_number" class="container text-center mt-4 mb-4">
+            <button onclick="generate_number_btn_click()" class="btn btn-warning btn-lg">Generate Number</button>
+        </div>
+    </div>
+    <div id="section2">
+        <div class="container-pic">
+            <img src="https://media.tenor.com/4gd79th6Q0IAAAAM/boy-hmmm.gif" alt="">
+        </div>
+        <div class="container">
+            <h3>Guess a number between 1-10***</h3>
+            <h5>You have three attempts to guess the right number</h4>
+        </div>
+        <div class="text-center">
+            <div class="form-group w-25 mx-auto">
+                <input id="field" type="text" placeholder="Enter here..." class="form-control">
+            </div>
+            <button class="btn btn-primary btn-sm mt-4" id="clkbtn">Check</button>
+        </div>
+    </div>
+
+    <div class="btnn">
+        <p>Button clicks: <span id="clickCount">0</span></p>
+    </div>
+
+    <div class="container text-center" id="section3">
+        <img class="img-fluid" width="200px" src="https://thumbs.gfycat.com/SecondTartCygnet-max-1mb.gif" alt="">
+        <h2>Generating Number.....</h2>
+    </div>
+
+ 
+    <script src="main.js"></script>
+</body>
+</html>
